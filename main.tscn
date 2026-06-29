@@ -6,3 +6,10 @@
 offset_right = 40.0
 offset_bottom = 23.0
 text = "こんにちは"
+
+[node name="Label7" type="Label" parent="." unique_id=773011021]
+offset_left = 312.0
+offset_top = 159.0
+offset_right = 352.0
+offset_bottom = 182.0
+text = "あ"
