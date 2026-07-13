@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://crmdtc8g64yu4"]
+
+[ext_resource type="Texture2D" uid="uid://dprb5qikxlq0y" path="res://haikei 1.png" id="1_uyggy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cu2vy"]
+size = Vector2(2938, 66)
+
+[node name="Node2D" type="Node2D" unique_id=1134229477]
+position = Vector2(-127, -191)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=14958991]
+
+[node name="Haikei1" type="Sprite2D" parent="StaticBody2D" unique_id=896181695]
+position = Vector2(1612, 856)
+scale = Vector2(1.477, 1)
+texture = ExtResource("1_uyggy")
+
+[node name="Haikei2" type="Sprite2D" parent="StaticBody2D" unique_id=620048567]
+position = Vector2(4596.5, 856)
+scale = Vector2(1.5044999, 1)
+texture = ExtResource("1_uyggy")
+
+[node name="Haikei3" type="Sprite2D" parent="StaticBody2D" unique_id=1044425784]
+position = Vector2(7601.5, 856)
+scale = Vector2(1.4915, 1)
+texture = ExtResource("1_uyggy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=267069622]
+position = Vector2(1612, 1362)
+shape = SubResource("RectangleShape2D_cu2vy")
+
+[node name="ColorRect" type="ColorRect" parent="StaticBody2D/CollisionShape2D" unique_id=1479005357]
+offset_left = -4576.0
+offset_top = -2478.0
+offset_right = -3102.0
+offset_bottom = -2376.0
+
+[node name="ColorRect2" type="ColorRect" parent="StaticBody2D/CollisionShape2D" unique_id=1184970106]
+offset_left = -945.0
+offset_top = -324.0
+offset_right = -789.3102
+offset_bottom = -222.0
+rotation = 0.0074697896
+
+[node name="ColorRect3" type="ColorRect" parent="StaticBody2D/CollisionShape2D" unique_id=735292631]
+offset_left = -756.0
+offset_top = -439.0
+offset_right = -537.3369
+offset_bottom = -337.0
+
+[node name="ColorRect4" type="ColorRect" parent="StaticBody2D/CollisionShape2D" unique_id=21214674]
+offset_left = -499.0
+offset_top = -318.0
+offset_right = -97.0
+offset_bottom = -272.0
+
+[node name="ColorRect5" type="ColorRect" parent="StaticBody2D/CollisionShape2D" unique_id=89539496]
+offset_left = -1467.0
+offset_top = -506.0
+offset_right = -1098.0
+offset_bottom = -404.0
+
+[node name="ColorRect6" type="ColorRect" parent="StaticBody2D/CollisionShape2D" unique_id=408941295]
+offset_left = 1049.0
+offset_top = -437.0
+offset_right = 1418.0
+offset_bottom = -335.0
+
+[node name="ColorRect7" type="ColorRect" parent="StaticBody2D/CollisionShape2D" unique_id=418773807]
+offset_left = 174.0
+offset_top = -899.0
+offset_right = 543.0
+offset_bottom = -797.0
+
+[node name="ColorRect8" type="ColorRect" parent="StaticBody2D/CollisionShape2D" unique_id=909541390]
+offset_left = 668.0
+offset_top = -417.0
+offset_right = 1037.0
+offset_bottom = -315.0
+
+[node name="ColorRect9" type="ColorRect" parent="StaticBody2D/CollisionShape2D" unique_id=1035600711]
+offset_left = -80.0
+offset_top = -413.0
+offset_right = 289.0
+offset_bottom = -311.0
+
+[node name="ColorRect10" type="ColorRect" parent="StaticBody2D/CollisionShape2D" unique_id=123765745]
+offset_left = 297.0
+offset_top = -401.0
+offset_right = 666.0
+offset_bottom = -299.0

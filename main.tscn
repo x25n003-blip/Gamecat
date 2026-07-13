@@ -1,15 +1,18 @@
 [gd_scene format=3 uid="uid://bqwp2f1cruyxn"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7dm0k"]
+
 [node name="Node2D" type="Node2D" unique_id=2008658873]
 
-[node name="Label" type="Label" parent="." unique_id=519262499]
-offset_right = 40.0
-offset_bottom = 23.0
-text = "こんにちは"
+[node name="Ground" type="StaticBody2D" parent="." unique_id=1296198901]
 
-[node name="Label2" type="Label" parent="." unique_id=337901607]
-offset_left = 34.0
-offset_top = 136.0
-offset_right = 74.0
-offset_bottom = 159.0
-text = "土橋です私かわいいです"
+[node name="Rect" type="ColorRect" parent="Ground" unique_id=1852624950]
+offset_left = 64.0
+offset_top = 519.0
+offset_right = 104.0
+offset_bottom = 559.0
+
+[node name="Shape" type="CollisionShape2D" parent="Ground" unique_id=2127665283]
+position = Vector2(91, 168)
+shape = SubResource("RectangleShape2D_7dm0k")
+
