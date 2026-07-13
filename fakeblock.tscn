@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://b874qt6l0kxpy"]
+
+[ext_resource type="Script" uid="uid://dofm6smsshhbg" path="res://fakeblock.gd" id="1_uo1y8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_igi68"]
+size = Vector2(133, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uo1y8"]
+size = Vector2(133, 10)
+
+[node name="staticbody2d" type="StaticBody2D" unique_id=1352513259]
+collision_mask = 0
+script = ExtResource("1_uo1y8")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=195699474]
+offset_left = 133.0
+offset_top = 165.0
+offset_right = 266.0
+offset_bottom = 205.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=224925044]
+position = Vector2(199.5, 173)
+shape = SubResource("RectangleShape2D_igi68")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1611958040]
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1630574485]
+position = Vector2(199.5, 165)
+shape = SubResource("RectangleShape2D_uo1y8")
+debug_color = Color(0.96171933, 0.16292784, 0.29104, 0.41960785)
