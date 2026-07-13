@@ -15,3 +15,4 @@ offset_bottom = 559.0
 [node name="Shape" type="CollisionShape2D" parent="Ground" unique_id=2127665283]
 position = Vector2(91, 168)
 shape = SubResource("RectangleShape2D_7dm0k")
+

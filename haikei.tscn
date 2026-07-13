@@ -11,8 +11,18 @@ position = Vector2(-127, -191)
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=14958991]
 
 [node name="Haikei1" type="Sprite2D" parent="StaticBody2D" unique_id=896181695]
-position = Vector2(1601, 798)
+position = Vector2(1612, 856)
 scale = Vector2(1.477, 1)
+texture = ExtResource("1_uyggy")
+
+[node name="Haikei2" type="Sprite2D" parent="StaticBody2D" unique_id=620048567]
+position = Vector2(4596.5, 856)
+scale = Vector2(1.5044999, 1)
+texture = ExtResource("1_uyggy")
+
+[node name="Haikei3" type="Sprite2D" parent="StaticBody2D" unique_id=1044425784]
+position = Vector2(7601.5, 856)
+scale = Vector2(1.4915, 1)
 texture = ExtResource("1_uyggy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=267069622]
@@ -57,10 +67,10 @@ offset_right = 1418.0
 offset_bottom = -335.0
 
 [node name="ColorRect7" type="ColorRect" parent="StaticBody2D/CollisionShape2D" unique_id=418773807]
-offset_left = 1136.0
-offset_top = -1594.0
-offset_right = 1505.0
-offset_bottom = -1492.0
+offset_left = 174.0
+offset_top = -899.0
+offset_right = 543.0
+offset_bottom = -797.0
 
 [node name="ColorRect8" type="ColorRect" parent="StaticBody2D/CollisionShape2D" unique_id=909541390]
 offset_left = 668.0
@@ -79,7 +89,3 @@ offset_left = 297.0
 offset_top = -401.0
 offset_right = 666.0
 offset_bottom = -299.0
-
-[node name="Haikei1" type="Sprite2D" parent="StaticBody2D/CollisionShape2D" unique_id=620048567]
-position = Vector2(2460, -568)
-texture = ExtResource("1_uyggy")
