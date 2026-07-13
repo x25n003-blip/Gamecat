@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://cjvaww44c57fi"]
+
+[ext_resource type="Script" uid="uid://cdref6xqabayu" path="res://node_2d.gd" id="1_0e48y"]
+[ext_resource type="Texture2D" uid="uid://0340kmwoownq" path="res://nekosin.png" id="2_0e48y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0hol4"]
+size = Vector2(140, 141)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_epypp"]
+atlas = ExtResource("2_0e48y")
+region = Rect2(1200, 1200, 1200, 1200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0hol4"]
+atlas = ExtResource("2_0e48y")
+region = Rect2(0, 1200, 1200, 1200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q6r6c"]
+atlas = ExtResource("2_0e48y")
+region = Rect2(0, 0, 1200, 1200)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kdubu"]
+atlas = ExtResource("2_0e48y")
+region = Rect2(1200, 0, 1200, 1200)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4d7sh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_epypp")
+}],
+"loop": true,
+"name": &"ぐるねこ",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0hol4")
+}],
+"loop": true,
+"name": &"困り猫",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q6r6c")
+}],
+"loop": true,
+"name": &"困り猫2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kdubu")
+}],
+"loop": true,
+"name": &"通常猫",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="CharacterBody2D" unique_id=1174706524]
+script = ExtResource("1_0e48y")
+
+[node name="Shape" type="CollisionShape2D" parent="." unique_id=280961193]
+position = Vector2(117, 162)
+shape = SubResource("RectangleShape2D_0hol4")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="." unique_id=2047534547]
+position = Vector2(108.5, 132)
+scale = Vector2(0.20083334, 0.195)
+sprite_frames = SubResource("SpriteFrames_4d7sh")
+animation = &"通常猫"
