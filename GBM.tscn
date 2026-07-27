@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://8q8jiiko3rut"]
+
+[ext_resource type="AudioStream" uid="uid://d0q45pxqkhd6p" path="res://354_long_BPM180.mp3" id="1_qe2h2"]
+
+[node name="Node2D" type="Node2D" unique_id=581287815]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=2133155184]
+stream = ExtResource("1_qe2h2")
+autoplay = true

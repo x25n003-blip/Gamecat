@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="Gamecat"
-run/main_scene="uid://crmdtc8g64yu4"
+run/main_scene="uid://bqwp2f1cruyxn"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GameManager="*uid://dnagou7p2b1i3"
 
 [physics]
 

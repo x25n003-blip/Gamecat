@@ -18,3 +18,4 @@ func _change_scene() -> void:
 		get_tree().change_scene_to_file(next_stage_scene)
 	else:
 		print("次のステージが設定されていません！")
+
