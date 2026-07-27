@@ -11,6 +11,7 @@ size = Vector2(133, 10)
 [node name="staticbody2d" type="StaticBody2D" unique_id=1352513259]
 collision_mask = 0
 script = ExtResource("1_uo1y8")
+block_id = "fb_1"
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=195699474]
 offset_left = 133.0
