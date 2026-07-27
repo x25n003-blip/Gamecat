@@ -1,18 +1,37 @@
 [gd_scene format=3 uid="uid://bqwp2f1cruyxn"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_7dm0k"]
+[ext_resource type="PackedScene" uid="uid://cjvaww44c57fi" path="res://node_2d.tscn" id="1_ig7tw"]
+[ext_resource type="Texture2D" uid="uid://dprb5qikxlq0y" path="res://haikei 1.png" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://glrybfdsroxr" path="res://goal.tscn" id="3_h2yge"]
+[ext_resource type="AudioStream" uid="uid://d0q45pxqkhd6p" path="res://354_long_BPM180.mp3" id="4_1bvp3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0xm2m"]
+size = Vector2(4236, 20)
 
 [node name="Node2D" type="Node2D" unique_id=2008658873]
 
-[node name="Ground" type="StaticBody2D" parent="." unique_id=1296198901]
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=1419113568]
 
-[node name="Rect" type="ColorRect" parent="Ground" unique_id=1852624950]
-offset_left = 64.0
-offset_top = 519.0
-offset_right = 104.0
-offset_bottom = 559.0
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" unique_id=1876684274]
+position = Vector2(1000, 600)
+motion_scale = Vector2(2, 1)
+motion_mirroring = Vector2(2000, 0)
 
-[node name="Shape" type="CollisionShape2D" parent="Ground" unique_id=2127665283]
-position = Vector2(91, 168)
-shape = SubResource("RectangleShape2D_7dm0k")
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer" unique_id=1718531146]
+texture = ExtResource("2_0xm2m")
 
+[node name="Node2D4" parent="." unique_id=1079027360 instance=ExtResource("1_ig7tw")]
+position = Vector2(226, 971)
+
+[node name="goal" parent="Node2D4" unique_id=1454120327 instance=ExtResource("3_h2yge")]
+position = Vector2(3723, 98)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=591123395]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=688673123]
+position = Vector2(2076, 1133)
+shape = SubResource("RectangleShape2D_0xm2m")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=593048549]
+stream = ExtResource("4_1bvp3")
+autoplay = true

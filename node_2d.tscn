@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://0340kmwoownq" path="res://nekosin.png" id="2_0e48y"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0hol4"]
-size = Vector2(140, 141)
+size = Vector2(83, 115)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_epypp"]
 atlas = ExtResource("2_0e48y")
@@ -61,11 +61,12 @@ animations = [{
 script = ExtResource("1_0e48y")
 
 [node name="Shape" type="CollisionShape2D" parent="." unique_id=280961193]
-position = Vector2(117, 162)
+position = Vector2(3.5, 26.5)
 shape = SubResource("RectangleShape2D_0hol4")
 
 [node name="Sprite" type="AnimatedSprite2D" parent="." unique_id=2047534547]
-position = Vector2(108.5, 132)
-scale = Vector2(0.20083334, 0.195)
+scale = Vector2(0.15041667, 0.15583333)
 sprite_frames = SubResource("SpriteFrames_4d7sh")
-animation = &"通常猫"
+animation = &"困り猫2"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1828422273]
